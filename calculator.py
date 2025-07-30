@@ -12,5 +12,10 @@ elif operation == '-':
     result = f"{first_number} - {second_number} = {first_number - second_number}"
 elif (operation == '*'):
     result = f"{first_number} * {second_number} = {first_number * second_number}"
-elif (operation == '/'):
+elif (operation == '/'):  
+    if second_number != 0:
+        result = f"{first_number} / {second_number} = {first_number / second_number}"
+    else:
+        result = "Error: Division by zero is not allowed."
+print(result)
   # comment:     
